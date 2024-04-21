@@ -6,13 +6,14 @@ import Testimonial from "@/components/Testimonial"
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title"
 import { BlogCard, Brand } from "@/components/router"
 import React from "react"
+import {websiteInfo} from "@/assets/data/dummydata";
 
 const Hero = () => {
   return (
     <>
       <section className='hero'>
         <div className='container'>
-          <TitleLogo title='creative' caption='7' className='logobg' />
+          <TitleLogo title={websiteInfo.siteName} caption={websiteInfo.caption} className='logobg' />
           <h1 className='hero-title'>WE BUILD DIGITAL EXPERIENCES</h1>
 
           <div className='sub-heading'>

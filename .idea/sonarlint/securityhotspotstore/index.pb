@@ -47,3 +47,5 @@ I
 sections/Team.js,4/c/4cdc1ad9d0ea293bc28dbc9d6dddcde071d8f48a
 <
 package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
+@
+sections/Hero.js,b/8/b808b830adeb7e73135536510b56dbd5be4ca472
