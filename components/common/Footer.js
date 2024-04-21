@@ -2,24 +2,27 @@ import Link from "next/link"
 import { TitleLogo } from "./Title"
 import { BsFacebook } from "react-icons/bs"
 import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
+import {websiteInfo} from "@/assets/data/dummydata";
 
 const Footer = () => {
+  const year = new Date().getFullYear()
+
   return (
     <>
       <footer>
         <div className='container'>
           <div className='grid-4'>
             <div className='logo'>
-              <TitleLogo title='creative' caption='7' className='logobg' />
+              <TitleLogo title={websiteInfo.siteName} caption={websiteInfo.caption} className='logobg' />
               <br />
               <span>
                 Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
               </span>
               <br />
               <br />
-              <h3>+1 001 234 5678</h3>
+              <h3>{websiteInfo.phone}</h3>
               <br />
-              <button className='button-primary'>Request for quote</button>
+              {/*<button className='button-primary'>Request for quote</button>*/}
             </div>
             <ul>
               <h3>COMPANY</h3>
@@ -35,9 +38,9 @@ const Footer = () => {
               <li>
                 <Link href='/'>Blog</Link>
               </li>
-              <li>
-                <Link href='/'>Demo design system</Link>
-              </li>
+              {/*<li>*/}
+              {/*  <Link href='/'>Demo design system</Link>*/}
+              {/*</li>*/}
               <li>
                 <Link href='/'>Contact</Link>
               </li>
@@ -85,12 +88,12 @@ const Footer = () => {
           </div>
           <div className='legal connect py'>
             <div className='text'>
-              <span>© 2023 THE SEVEN. ALL RIGHTS RESERVED.</span>
+              <span>©{year} {websiteInfo.companyName}. ALL RIGHTS RESERVED.</span>
             </div>
             <div className='connect'>
-              <span>GORKCODER COMPANY</span>
-              <span> &nbsp; | &nbsp; </span>
-              <span>TERMS & CONDITIONS</span>
+              <span>{websiteInfo.companyName}</span>
+              {/*<span> &nbsp; | &nbsp; </span>*/}
+              {/*<span>TERMS & CONDITIONS</span>*/}
             </div>
           </div>
         </div>

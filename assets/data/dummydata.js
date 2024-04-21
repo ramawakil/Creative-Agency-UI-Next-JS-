@@ -3,10 +3,22 @@ import { TfiRulerPencil } from "react-icons/tfi"
 import { VscFileSubmodule } from "react-icons/vsc"
 import { BiUser } from "react-icons/bi"
 
+export const websiteInfo = {
+  siteName: "RMAK",
+  caption: 'A',
+  region: 'Dar es Salaam, Tanzania',
+  address: 'Condominium complex\n' +
+      'Dar es Salaam · 022 286 2596',
+  email: 'info@armak.co.tz',
+  phone: '+255 684 218 958',
+  companyName: 'ARMAK COMPANY LIMITED',
+
+}
+
 export const home = [
   {
     icon: <AiOutlineCalendar size={25} />,
-    title: "10+ years of market experience",
+    title: "1+ years of market experience",
   },
   {
     icon: <TfiRulerPencil size={25} />,
